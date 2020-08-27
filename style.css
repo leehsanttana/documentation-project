@@ -1,9 +1,13 @@
 @import 'href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"';
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --bg-header: #3d5a80;
-    --bg-nav: #98c1d9;
-    --bg-section: #e0fbfc;
+    --bg-nav: #b1c7d4;
+    --bg-section: #eef8f8;
     --border: #293241;
 }
 
@@ -19,29 +23,42 @@ body{
 }
 
 header{
-
     padding: .5rem 0 0 .5rem;
     color: var(--bg-header);
     border-bottom: 3px solid var(--border);
 }
 
+.title-nav{
+    position: absolute;
+    top: 10px;
+}
+
 .nav-column{
+    padding-top: 3%;
     background: var(--bg-nav);
     border-right: 1px solid var(--border);
-    
     z-index: 2;
-    height: 100%;
+    height: 800px;
     overflow-y: auto;
     overflow-x: hidden; 
 }
 
 .nav-link{
     margin-top: .5rem !important;
-    border-bottom: 3px solid var(--border);
+    border-bottom: 1px solid var(--border);
     display: block;
     color: #fff;
     font-weight: 600;
 }
+
+.nav-link:hover{
+    color: #fff;
+}
+
+.active, .nav-link:hover {
+    background-color: var(--bg-header);
+    color: fff;
+  }
 
 .section-column{
     background: var(--bg-section);
@@ -50,4 +67,14 @@ header{
 
 article{
     padding: 1rem;
+}
+
+code{
+    display: block;
+    text-align: left;
+    white-space: pre;
+    padding: 1rem;
+    margin: 2rem;
+    background: var(--bg-nav);
+    border-radius: 1rem;
 }
