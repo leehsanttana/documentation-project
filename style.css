@@ -28,10 +28,9 @@ header{
 .nav-column{
     background: var(--bg-nav);
     border-right: 1px solid var(--border);
-    position: fixed !important;
+    
     z-index: 2;
     height: 100%;
-    padding-top: 10%; 
     overflow-y: auto;
     overflow-x: hidden; 
 }
@@ -47,8 +46,6 @@ header{
 .section-column{
     background: var(--bg-section);
     position: relative;
-    left: 16.6%;
-    padding-top: 12%;
 }
 
 article{
