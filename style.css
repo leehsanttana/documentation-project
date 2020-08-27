@@ -15,6 +15,10 @@ body{
     font-family: 'Source Sans Pro', sans-serif !important;
 }
 
+h2, h3, h4, h5, h5{
+    color: var(--bg-header);
+}
+
 .header{
     background: var(--bg-header);
     padding: 2rem;
@@ -22,25 +26,27 @@ body{
     border-bottom: 3px solid var(--border);
 }
 
-header{
+.title-header{
     padding: .5rem 0 0 .5rem;
-    color: var(--bg-header);
     border-bottom: 3px solid var(--border);
 }
 
 .title-nav{
-    position: absolute;
+    position: relative;
     top: 10px;
 }
 
 .nav-column{
-    padding-top: 3%;
+    padding: .5rem;
     background: var(--bg-nav);
-    border-right: 1px solid var(--border);
     z-index: 2;
-    height: 800px;
-    overflow-y: auto;
-    overflow-x: hidden; 
+    height: auto; 
+}
+
+.navbar-collapse{
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    height: 400px; 
 }
 
 .nav-link{
@@ -72,9 +78,35 @@ article{
 code{
     display: block;
     text-align: left;
-    white-space: pre;
+    white-space: pre-line;
     padding: 1rem;
     margin: 2rem;
     background: var(--bg-nav);
     border-radius: 1rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+    
+    .nav-column{
+        padding-top: 3%;
+        background: var(--bg-nav);
+        border-right: 1px solid var(--border);
+        z-index: 2;
+        height: 800px;
+        overflow-y: auto;
+        overflow-x: hidden; 
+    }
+
+    .navbar-collapse{
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        height: auto; 
+    }
+
+    .title-nav{
+        position: absolute;
+        top: 10px;
+    }
+
 }
