@@ -52,19 +52,14 @@ h2, h3, h4, h5, h5{
 .nav-link{
     margin-top: .5rem !important;
     border-bottom: 1px solid var(--border);
-    display: block;
-    color: #fff;
+    color: #fff !important;
     font-weight: 600;
-}
-
-.nav-link:hover{
-    color: #fff;
 }
 
 .active, .nav-link:hover {
     background-color: var(--bg-header);
     color: fff;
-  }
+}
 
 .section-column{
     background: var(--bg-section);
@@ -75,13 +70,12 @@ article{
     padding: 1rem;
 }
 
-code{
+code kbd{
     display: block;
     text-align: left;
     white-space: pre-line;
     padding: 1rem;
     margin: 2rem;
-    background: var(--bg-nav);
     border-radius: 1rem;
 }
 
