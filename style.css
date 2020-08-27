@@ -44,4 +44,13 @@ header{
     font-weight: 600;
 }
 
+.section-column{
+    background: var(--bg-section);
+    position: relative;
+    left: 16.6%;
+    padding-top: 12%;
+}
 
+article{
+    padding: 1rem;
+}
